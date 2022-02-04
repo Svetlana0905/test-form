@@ -1,0 +1,10 @@
+@import "../css/app.scss";
+
+.users {
+   width: 75%;
+   padding: 2em 0 0 3em;
+   &__title {
+      margin-bottom: 1.1em;
+      font-size: 1.4rem;
+   }
+}

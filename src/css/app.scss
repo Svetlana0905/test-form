@@ -1,0 +1,17 @@
+@import "./null.scss";
+.main {
+  max-width: 665px;
+  margin: 0 auto;
+}
+.section {
+  display: flex;
+}
+.sort-block {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em 0 0 1em;
+  background: rgba(189, 189, 189, 1);
+  gap: 1em;
+}

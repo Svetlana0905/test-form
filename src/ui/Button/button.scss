@@ -1,0 +1,30 @@
+.button {
+   padding: 0.5em 1.2em;
+   font-size: 12px;
+   line-height: 14px;
+   color: white;
+   background: rgba(75, 81, 239, 1);
+   border-radius: 5px;
+   transition: all 1s ease;
+   &:focus,
+   &:hover {
+      color: rgb(0, 3, 87);
+      background: rgb(134, 138, 255);
+   }
+   &:active {
+      color: white;
+      background: rgb(0, 3, 87);
+   }
+   &:disabled {
+      color: white;
+      background: #929292;
+   }
+}
+.form__button {
+   background: #52cf4f;
+   align-self: flex-end;
+
+   &__button:disabled {
+      background: #afafaf;
+   }
+}
