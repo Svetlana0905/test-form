@@ -7,8 +7,8 @@ export const App = () => {
   return (
     <main className='main'>
       <Routes>
-        <Route path='/*' element={<UsersPage />} />
-        <Route path='/userprofile/:userId' element={<UserPage />} />
+        <Route path='*' element={<UsersPage />} />
+        <Route path='test-form/userprofile/:userId' element={<UserPage />} />
       </Routes>
     </main>
   );
