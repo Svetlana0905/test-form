@@ -42,16 +42,15 @@ export const UserPage = () => {
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className='form'>
                <div className='form__input-block'>
-               <Input label="User Name" register={register} name='UserName' required read={read} inputName={user.username} color={ errors.UserName?.type === 'required' && colorInp }/>
-               <Input label="Name" register={register} name='Name' required read={read} inputName={user.name} color={ errors.Name?.type === 'required' && colorInp }/>
-               <Input label="Email" register={register} name='Email' required read={read} inputName={user.email} color={ errors.Email?.type === 'required' && colorInp }/>
-               <Input label="Street" register={register} name='Street' required read={read} inputName={user.address.street} color={ errors.Street?.type === 'required' && colorInp }/>
-               <Input label="City" register={register} name='City' required read={read} inputName={user.address.city} color={ errors.City?.type === 'required' && colorInp }/>
-               <Input label="Zip code" register={register} name='ZipCode' required read={read} inputName={user.address.zipcode} color={ errors.ZipCode?.type === 'required' && colorInp }/>
-               <Input label="Phone" register={register} name='Phone' required read={read} inputName={user.phone} color={ errors.Phone?.type === 'required' && colorInp }/>
+               <Input type='text' label="User Name" register={register} name='UserName' required read={read} inputName={user.username} color={ errors.UserName?.type === 'required' && colorInp }/>
+               <Input type='text' label="Name" register={register} name='Name' required read={read} inputName={user.name} color={ errors.Name?.type === 'required' && colorInp }/>
+               <Input type='email' label="Email" register={register} name='Email' required read={read} inputName={user.email} color={ errors.Email?.type === 'required' && colorInp }/>
+               <Input type='text' label="Street" register={register} name='Street' required read={read} inputName={user.address.street} color={ errors.Street?.type === 'required' && colorInp }/>
+               <Input type='text' label="City" register={register} name='City' required read={read} inputName={user.address.city} color={ errors.City?.type === 'required' && colorInp }/>
+               <Input type='text' label="Zip code" register={register} name='ZipCode' required read={read} inputName={user.address.zipcode} color={ errors.ZipCode?.type === 'required' && colorInp }/>
+               <Input type='tel' label="Phone" register={register} name='Phone' required read={read} inputName={user.phone} color={ errors.Phone?.type === 'required' && colorInp }/>
                <textarea label="Comment" name='Comment' {...register("Comment")} ></textarea>
                </div>
-
                <input type="submit" disabled={read} value="Отправить" className='form__button button' />
             </form>
          </div>
