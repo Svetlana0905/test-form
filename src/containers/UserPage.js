@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { Button } from '../ui/Button/Button';
 import { useForm } from "react-hook-form";
 import { Input } from '../ui/Input/Input';
+import { ButtonLink } from '../ui/ButtonLink/ButtonLink';
 
 export const UserPage = () => {
    const [read, setRead] = useState(true)
@@ -34,6 +35,7 @@ export const UserPage = () => {
             <h3 className='sort-block__subtitle subtitle'>Сортировка</h3>
             <Button name={'по городу'} />
             <Button name={'по компании'} />
+            <ButtonLink to='/test-form'/>
          </div>
          <div className='user'>
             <div className='user__top--block'>
